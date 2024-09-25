@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #e0e0e0;
+    background-color: #1e1e1e;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-container {
+    margin: 0 32px;
+}
+
+.header {
+    height: 8vh;
+    padding: 20px;
+    margin: 0 0 5vh 12px;
+}
+
+.cell1, .cell2, .cell3, .cell4, .cell5 {
+    padding: 20px;
+    color: #e0e0e0;
+    background-color: rgba(0, 0, 30, 0.55);
+    overflow: auto;
+}
+
+.cell1 {
+    float: left;
+    width: 20%;
+    background-color: rgba(0, 0, 30, 0.55);
+    height: 97vh;
+}
+
+.cell2 {
+    display: inline-block;
+    width: 80%;
+    background-color: rgba(0, 0, 50, 0.65);
+    height: 17vh;
+}
+
+.cell3, .cell4, .cell5 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.cell3 {
+    width: 60%;
+    background-color: rgba(0, 0, 20, 0.45);
+    height: 60vh;
+    overflow: hidden;
+}
+
+.cell4 {
+    width: 20%;
+    background-color: rgba(0, 0, 30, 0.55);
+    height: 80vh;
+    float: right;
+}
+
+.cell5 {
+    width: 60%;
+    background-color: rgba(0, 0, 50, 0.65);
+    height: 20vh;
+}
+
+.footer {
+    clear: both;
+    height: 80px;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 32px;
+    margin-right: 12px;
+}
+
+.nav-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-list li {
+    margin-bottom: 15px;
+}
+
+.nav-list a {
+    font-family: 'Cinzel', sans-serif;
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffffff;
+}
+
+.background-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.x, .y {
+    font-family: 'Cinzel', sans-serif;
+    color: #ffcc00;
+    letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.35);
+    display: inline-block;
+    padding: 10px 20px;
+}
