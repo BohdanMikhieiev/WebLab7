@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .bold-text {
+            color: #ffcc00;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #e0e0e0;
+            background-color: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            max-width: 90%;
+            margin: 0 auto;
+            border-spacing: 0;
+            border-collapse: collapse;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-image: url("https://i.imgur.com/qtFtzJY.jpeg");
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .cell1, .cell2, .cell3, .cell4, .cell5 {
+            padding: 20px;
+            color: rgb(230, 230, 230);
+        }
+
+        .cell1 {
+            width: 25%;
+            background-color: rgba(0, 0, 30, 0.55);
+            padding-left: 20px;
+        }
+
+        .cell2 {
+            background-color: rgba(0, 0, 50, 0.65);
+        }
+
+        .cell3 {
+            background-color: rgba(0, 0, 20, 0.45);
+        }
+
+        .background-img {
+            height: 50vh;
+        }
+
+        .cell4{
+            padding: 3%;
+            background-color: rgba(0, 0, 30, 0.55);
+        }
+
+        .cell5 {
+            background-color: rgba(0, 0, 50, 0.65);
+        }
+
+        .x, .y {
+            font-family: 'Cinzel', sans-serif;
+            color: #ffcc00;
+            letter-spacing: 2px;
+            background-color: rgba(255, 255, 255, 0.35);
+            display: inline-block;
+            min-width: 200px;
+        }
+
+        .x {
+            margin: 20px;
+        }
+
+        .y {
+            margin: 20px;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="x">
+                <h1>E-Mail</h1>
+            </td>
+            <td class="header"></td>
+            <td class="header"></td>
+        </tr>
+        <tr>
+            <td class="cell1"></td>
+            <td class="cell2">
+                Welcome to the <b class="bold-text">Made in Abyss</b> Wiki, your ultimate guide to the mysterious and enchanting world of the Abyss. Delve deep into the lore, discover the secrets of the layers, explore detailed character profiles, and stay updated with the latest episodes, manga chapters, and merchandise. Whether you’re a seasoned cave raider or a curious newcomer, this wiki is your source for all things <b class="bold-text">Made in Abyss</b>
+            </td>
+            <td class="cell2"></td>
+        </tr>
+
+        <tr>
+            <td class="cell1">
+                <ul>
+                    <li class="award-list">
+                        <b>Crunchyroll Anime Awards (2018)</b> – Winning Anime of the Year was a significant achievement
+                    </li>
+                    <li class="award-list">
+                        <b>Tokyo Anime Award Festival (2018)</b> – Recognized for its outstanding animation, particularly the stunning art direction and immersive world-building
+                    </li>
+                    <li class="award-list">
+                        <b>Seiun Award (2018)</b> – A prestigious Japanese science fiction award given to the Made in Abyss manga for its groundbreaking story
+                    </li>
+                </ul>
+            </td>
+            <td class="cell3">
+                <img src="https://i.imgur.com/pO2iBZR.png" alt="background" class="background-img" usemap="#background">
+
+                <map name="background">
+                    <area shape="circle" alt="page1" coords="120, 130, 90" href="https://bohdanmikhieiev.github.io/WebLab3/pages/page1.html">
+                    <area shape="circle" alt="page2" coords="365, 130, 90" href="https://bohdanmikhieiev.github.io/WebLab3/pages/page2.html">
+                    <area shape="circle" alt="page3" coords="605, 130, 90" href="https://bohdanmikhieiev.github.io/WebLab3/pages/page3.html">
+                    <area shape="circle" alt="page4" coords="250, 310, 90" href="https://bohdanmikhieiev.github.io/WebLab3/pages/page4.html">
+                    <area shape="circle" alt="page5" coords="490, 310, 90" href="https://bohdanmikhieiev.github.io/WebLab3/pages/page5.html">
+                </map>
+            </td>
+            <td class="cell4">
+                <nav class="navbar">
+                    <ol class="nav-list">
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/index.html">Home</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/pages/page1.html">Riko</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/pages/page1.html">Nanachi</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/pages/page1.html">Faputa</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/pages/page1.html">Reg</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/pages/page1.html">Prushka</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/grid/index_grid.html">Only Grid</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/flex/index_flex.html">Only Flex</a></li>
+                        <li><a href="https://bohdanmikhieiev.github.io/WebLab3/plain/index_plain.html">Plain</a></li>
+                        <li><a href="index_email.html">E-Mail</a></li>
+                    </ol>
+                </nav>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cell1"></td>
+            <td class="cell5">
+                Bugs and birds paint in the sky a freezing river. The curtain of twilight reveals the state of the stars<br>
+                Thus once again, one who was captivated by it ss lured into the depths of the earth<br>
+                The path of the maelstrom vastly envelops water and sky and calls upon the travelers<br>
+                Here I call you. Dyahode hoode hoo
+            </td>
+            <td class="cell4"></td>
+        </tr>
+
+        <tr>
+            <td class="footer"></td>
+            <td class="footer"></td>
+            <td class="y">
+                <h2>This lab was sponsored by Hail Hex</h2>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
