@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 1</title>
+    <title>Lab 7</title>
     <link rel = "stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap">
-    <script src="script.js"></script>
 </head>
 <body>
 <div class="parallax">
     <div class="grid-container">
         <header class="header">
             <h1 class="x">
-                Lab 6 1st part
+                Lab 7
             </h1>
         </header>
         <div class="cell1">
@@ -41,11 +40,7 @@
                 <area shape="circle" alt="page4" coords="290, 450, 100" href="../pages/page4.html">
                 <area shape="circle" alt="page5" coords="583, 450, 100" href="../pages/page5.html">
             </map>
-
-            <h1>Create Dropdown Menus</h1>
-            <div id="menu-container"></div>
-            <button onclick="addMenu()">Add Menu</button>
-            <button onclick="saveData()">Save Data</button>
+            <button id="play">Play</button>
         </div>
         <div class="cell4">
             <nav class="navbar">
@@ -60,9 +55,8 @@
                     <li><a href="../flex/index_flex.html">Only Flex</a></li>
                     <li><a href="../plain/index_plain.html">Plain</a></li>
                     <li><a href="../email/index_email.html">E-Mail</a></li>
-                    <li><a href="../email/index_email.html">E-Mail</a></li>
-                    <li><a href="index.html">Lab 6 1st part</a></li>
-                    <li><a href="../6Lab_2/index.html">Lab 6 2nd part</a></li>
+                    <li><a href="index.html">Lab 7</a></li>
+
                 </ol>
             </nav>
         </div>
@@ -72,6 +66,16 @@
             The path of the maelstrom vastly envelops water and sky and calls upon the travelers<br>
             Here I call you. Dyahode hoode hoo
         </div>
+        <div id="work" style="display: none;">
+            <div id="anim">
+            </div>
+            <div id="controls">
+                <button id="close">Close</button>
+                <div id="log"></div>
+                <button id="start">Start</button>
+                <button id="reload" style="display:none;">Reload</button>
+            </div>
+        </div>
         <footer class="footer">
             <h2 class="y">
                 This lab was sponsored by Hail Hex
@@ -80,5 +84,16 @@
     </div>
 
 </div>
+<table id="event-log" border="1" style="display:none; margin-top: 20px;">
+    <thead>
+    <tr>
+        <th>Local Events</th>
+        <th>Server Events</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="script.js"></script>
 </body>
 </html>

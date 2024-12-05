@@ -43,7 +43,6 @@ body {
 }
 
 
-
 div {
     line-height: 23px;
 }
@@ -86,7 +85,7 @@ div {
     background-color: rgba(0, 0, 20, 0.45);
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .main-info {
@@ -202,6 +201,60 @@ footer {
     max-width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+#work {
+    width: calc(40vw + 10px);
+    height: calc(80vh + 50px);
+    position: absolute;
+    z-index: 20;
+    background-color: aliceblue;
+    border: 5px solid blue;
+}
+
+#controls {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+#anim {
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+#anim::before, #anim::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-size: 32px 32px;
+    background-repeat: repeat;
+}
+
+#anim::before {
+    top: 0;
+    background: url('../images/texture1.png');
+}
+
+#anim::after {
+    bottom: 0;
+    background: url('../images/texture2.png');
+    z-index: 1;
+}
+
+#messages {
+    padding: 5px;
+    max-height: 40px;
+    overflow-y: auto;
 }
 
 @media (max-width: 1000px) {
