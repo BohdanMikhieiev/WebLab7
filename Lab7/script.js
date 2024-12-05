@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const saveEventToServer = (eventData) => {
-        fetch('lab7api-production.up.railway.app/log_event', {
+        fetch('https://lab7api-production.up.railway.app//log_event', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const loadEvents = () => {
-        fetch('lab7api-production.up.railway.app/events')
+        fetch('https://lab7api-production.up.railway.app//events')
             .then(response => response.json())
             .then(data => {
                 eventsBody.innerHTML = "";
